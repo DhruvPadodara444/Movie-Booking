@@ -127,5 +127,4 @@ const Movies = () => {
     </section>
   )
 }
-
 export default Movies

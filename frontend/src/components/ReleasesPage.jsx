@@ -119,5 +119,4 @@ const ReleasesPage = () => {
         </div>
     )
 }
-
 export default ReleasesPage
