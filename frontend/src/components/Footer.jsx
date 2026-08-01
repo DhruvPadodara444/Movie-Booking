@@ -88,7 +88,7 @@ const Footer = () => {
                             </div>
                             
                             <h2 style={{fontFamily: "Monoton, cursive"}} className={footerStyles.brandTitle}>
-                                Cine <span className={footerStyles.brandTitleWhite}>Verse</span>
+                                Movie <span className={footerStyles.brandTitleWhite}>Book</span>
                             </h2>
                         </div>
                         <p className={footerStyles.brandDescription}>

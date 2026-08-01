@@ -291,6 +291,10 @@ export async function getBooking(req, res) {
     try {
         if (!req.user) return res.status(401).json({ success: false, message: 'Authentication required.' });
         const userId = String(req.user._id || req.user.id)
+
+        // const userId = new mongoose.Types.ObjectId(req.user._id || req.user.id)
+
+
         const { paymentStatus, status } = req.query
 
         const q = { userId }
@@ -305,7 +309,7 @@ export async function getBooking(req, res) {
             q.paymentStatus = "paid";
         }
 
-        const items = await Booking.find(q).sort({ createAt: -1 }).lean().exec()
+        const items = await Booking.find(q).sort({ createdAt: -1 }).lean().exec()
         return res.json({ success: true, items })
     }
     catch (err) {

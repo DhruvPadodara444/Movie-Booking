@@ -99,7 +99,7 @@ const Navbar = () => {
                         <Clapperboard className={navbarStyles.logoIcon} />
                     </div>
                     <div className={navbarStyles.logoText}>
-                        CineVerse
+                        MovieBook
                     </div>
                 </div>
                 <div className={navbarStyles.desktopNav}>

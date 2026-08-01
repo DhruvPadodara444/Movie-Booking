@@ -61,7 +61,7 @@ const Navbar = () => {
                         <div className={styles4.logoIcon}>
                             <Film className={styles4.logoIconInner} />
                         </div>
-                        <span className={styles4.logoText}>CINEVERSE</span>
+                        <span className={styles4.logoText}>MovieBook</span>
                     </div>
 
                     {/* Desktop Links (unchanged look) */}
@@ -97,7 +97,7 @@ const Navbar = () => {
                             <div className='flex items-center justify-center w-10 h-10 bg-red-600 rounded-full transform rotate-12'>
                                 <Film className='w-6 h-6 text-xl text-white transform -rotate-12' />
                             </div>
-                            <span className="font-['Impact'] text-xl text-white tracking-wider">CINEVERSE</span>
+                            <span className="font-['Impact'] text-xl text-white tracking-wider">MovieBook</span>
                         </div>
                         <button onClick={close} className='p-2 rounded-full hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-red-600'>
                             <XIcon className='w-5 h-5 text-red-200' />
@@ -185,7 +185,7 @@ const Navbar = () => {
                     {/* FOOTER*/}
                     <div className={styles4.mobileMenuPanelFooter}>
                         <p className={styles4.mobileMenuFooterText}>
-                            &copy; {new Date().getFullYear()} CINEVERSE
+                            &copy; {new Date().getFullYear()} MovieBook
                         </p>
                     </div>
                 </aside>
