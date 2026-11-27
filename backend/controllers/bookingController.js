@@ -290,8 +290,14 @@ export async function createBooking(req, res) {
 export async function getBooking(req, res) {
     try {
         if (!req.user) return res.status(401).json({ success: false, message: 'Authentication required.' });
+
+        // this is use when your Home wifi are connect
         const userId = String(req.user._id || req.user.id)
 
+
+
+
+        // this is use when you connect with your mobile Wifi
         // const userId = new mongoose.Types.ObjectId(req.user._id || req.user.id)
 
 
